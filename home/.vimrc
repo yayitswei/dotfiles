@@ -117,8 +117,8 @@ function! PulseCursorLine()
     execute current_window . 'wincmd w'
 endfunction
 
-nnoremap n nzzzv:call PulseCursorLine()<cr>
-nnoremap N Nzzzv:call PulseCursorLine()<cr>
+nnoremap n nzzz:call PulseCursorLine()<cr>
+nnoremap N Nzzz:call PulseCursorLine()<cr>
 
 augroup ft_statuslinecolor
     au!
