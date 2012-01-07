@@ -34,6 +34,8 @@ map <F5> :make && make install<cr>
 map <F1> <ESC>
 imap <F1> <ESC>
 
+au BufWritePre * :%s/\s\+$//e
+
 au BufNewFile,BufRead *.py set sw=4
 au BufNewFile,BufRead *.py set ts=4
 au BufNewFile,BufRead *.py set sts=4
