@@ -36,9 +36,9 @@ imap <F1> <ESC>
 
 au BufWritePre * :%s/\s\+$//e
 
-au BufNewFile,BufRead *.py set sw=4
-au BufNewFile,BufRead *.py set ts=4
-au BufNewFile,BufRead *.py set sts=4
+au BufNewFile,BufRead *.py set sw=2
+au BufNewFile,BufRead *.py set ts=2
+au BufNewFile,BufRead *.py set sts=2
 au BufNewFile,BufRead *.py map <F5> <esc>:!python %<cr>
 
 au BufNewFile,BufRead *.c set sw=4
@@ -160,3 +160,6 @@ map <leader>W  :%s/\s\+$//<cr>:let @/=''<CR>
 
 cnoremap <c-a> <home>
 cnoremap <c-e> <end>
+
+iabbrev func function
+iabbrev fun function

@@ -1,0 +1,5 @@
+source ~/.git-completion.sh
+export HISTIGNORE="&:ls:git diff"
+export HISTFILESIZE=100000
+export EDITOR=vim
+export ACK_OPTIONS="--ignore-dir=gae/static/ --ignore-dir=tools/third_party"
