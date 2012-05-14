@@ -163,3 +163,6 @@ cnoremap <c-e> <end>
 
 iabbrev func function
 iabbrev fun function
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
